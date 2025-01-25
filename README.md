@@ -20,10 +20,10 @@ eShop is a feature-rich e-commerce website built using Laravel. It provides a se
 -   **Backend**: Laravel
 -   **Frontend**: Blade templates, Bootstrap or Tailwind CSS
 -   **Database**: MySQL
--   **Authentication**: Laravel Jetstream (with Livewire or Inertia)
+-   **Authentication**: Laravel Jetstream (with Livewire)
 -   **Payment Gateways**: Stripe, PayPal
 -   **Version Control**: Git
--   **Deployment**: Laravel Forge, Heroku, or similar platforms
+<!-- -   **Deployment**: Laravel Forge, Heroku, or similar platforms -->
 
 ## Installation
 
@@ -44,37 +44,38 @@ To get started with the project locally, follow these steps:
 
 Navigate to the project directory:
 
-
-cd eshop
+    
+    cd Laravel-eShop
+    
 Install dependencies using Composer:
 
 
-composer install
+    composer install
 Set up your .env file:
 
 
-cp .env.example .env
+    cp .env.example .env
 Then, configure your database and other environment settings in the .env file.
 
 Generate the application key:
 
+    php artisan key:generate
 
-php artisan key:generate
 Run migrations to set up the database:
 
+    php artisan migrate
 
-php artisan migrate
 Seed the database with sample data (optional):
 
-
-php artisan db:seed
+    php artisan db:seed
 Start the Laravel development server:
 
 
 php artisan serve
-Access the application at http://localhost:8000.
 
-Usage
+    Access the application at http://localhost:8000
+
+## Usage
 Register a user account to start shopping.
 Admin users can log in to the admin dashboard and manage products, categories, and orders.
 Users can view products, add them to their cart, and complete the checkout process using the integrated payment systems.
