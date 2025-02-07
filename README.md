@@ -18,12 +18,11 @@ eShop is a feature-rich e-commerce website built using Laravel. It provides a se
 ## Tech Stack
 
 -   **Backend**: Laravel
--   **Frontend**: Blade templates, Bootstrap or Tailwind CSS
+-   **Frontend**: Blade templates, Tailwind CSS
 -   **Database**: MySQL
 -   **Authentication**: Laravel Jetstream (with Livewire)
--   **Payment Gateways**: Stripe, PayPal
+-   **Payment Gateways**: 
 -   **Version Control**: Git
-<!-- -   **Deployment**: Laravel Forge, Heroku, or similar platforms -->
 
 ## Installation
 
@@ -38,15 +37,18 @@ To get started with the project locally, follow these steps:
 ### Steps
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/Smeedsajjad/Laravel-eShop
-    ```
+
+        git clone https://github.com/Smeedsajjad/Laravel-eShop
 
 Navigate to the project directory:
 
     
     cd Laravel-eShop
     
+Install dependencies using Composer:
+
+
+    composer install
 Install dependencies using Composer:
 
 
@@ -71,9 +73,11 @@ Seed the database with sample data (optional):
 Start the Laravel development server:
 
 
-php artisan serve
+    composer run dev
 
-    Access the application at http://localhost:8000
+Access the application at
+    
+    http://localhost:8000
 
 ## Usage
 Register a user account to start shopping.
